@@ -8,6 +8,17 @@ header {
 	font-weight: bold;
 	font-size: 16px;
 	padding-right: 50px;
+	position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+	margin-top: -100px;
+}
+
+.show-header .navbar {
+	transition: 1s;
+  margin-top: 0;
 }
 
 body {
@@ -21,7 +32,6 @@ body {
 	z-index: -1;
 }
 
-
 .navitem {
 	color: white;
 	text-decoration: none;
@@ -29,6 +39,7 @@ body {
 	padding-right: 5px;
 	padding-left: 5px;
 	letter-spacing: 1px;
+
 }
 
 .navitem:hover {
@@ -231,7 +242,7 @@ ul {
 	position: absolute;
 	top: 20%;
 	right: 1%;
-	z-index: 7;
+	z-index: -1;
 }
 
 .homepage {
@@ -392,4 +403,26 @@ html {
 ::-webkit-scrollbar-track:hover{
 width: 12px;
 transition: .3s;
+}
+
+.ontop {
+	position: fixed;
+	z-index: 10000;
+	right: 1%;
+	margin-top: 2270px;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.ontop:hover {
+	cursor: pointer;
+		background-color: rgba(0, 0, 0, .5);
+		transition: .3s;
+
+}
+
+.ontop:not(:hover) {
+	transition: .3s;
 }
