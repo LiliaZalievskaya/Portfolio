@@ -42,66 +42,33 @@
     <a href="https://github.com/LiliaZalievskaya"><img class="github" src="images/1.png" alt="GitHub"></a>
     
 	</header>
-<div class="homepage">
-	<div>
-		<div class="main">
-		<h1>Hello <img class="hand" src="images/hand.png" alt="!"> </h1> <h1>I'm Lilia Zalievskaya</h1><br>
-		<div class="border"></div><br><br>
-		<span class="grey">I am a web developer. Actively studying front-end and back-end development.</span>
-	</div>	
-	<br><br><br><br>
-	<span class="pad">
-	<a href="Work.html" class="btn1">View projects</a>
-	</span>
+
+	<div class="container">
+		<div class="slider">
+			<div class="slider-line">
+				<img class="proj12" src="images/project1.jpg" alt="">
+				<img class="proj12" src="images/project2.jpg" alt="">
+				<img class="proj12" src="images/project3.jpg" alt="">
+			</div>
+		</div>
+		<button onclick="changeText('prev')" class="slider-prev">Prev</button>
+		<button onclick="changeText('next')" class="slider-next">Next</button>
 	</div>
-	<div class="maingif" id="maingif"></div>
-</div>
+
+	<div id="div1" class="slidertext active">Project 1</div>
+	<div id="div2" class="slidertext">Project 2</div>
+	<div id="div3" class="slidertext">Project 3</div>
+
+	<footer class="foot4">
+		<div class="foot">
+			<span>Made by Lilia Zaliievskaya</span>
+		</div>
+	</footer>
+
 	<script src="script/1.js"></script>
 	<script src="script/2.js"></script>
 	<script src="script/app2.js"></script>
-
-
-
-<div class="sec2">
-	<span class="vert">My skills</span>
-	<span class="vert1">My skills</span>
-	
-	<span class="my">
-		Front-end development <br><br><br><br><br><br><br><br><br><br>
-		Design development
-	</span>
-	<div class="modern">
-		Modern interfaces with high performance. I know the basics that are needed to create websites, namely Html, Css and JavaScript. <br><br><br><br><br><br><br>	<br><br>
-		Product designer specialising in UI design and design systems.<a href="E-mail.html" class="btn1" id="btn2">Contact me</a>
-	</div>
-	
-</div>
-
-<div class="sec3">
-	<div class="vert2">Recent projects</div>
-	<div class="vert3">Recent projects</div>
-	<div class="proj1">
-		<img class="project1" src="images/project1.jpg" alt=""><br><br><br><br><br><br><br><br><br><br>
-		<div>Project1</div>
-	</div>
-	<div class="proj2">
-		<img class="project2" src="images/project2.jpg" alt=""><br><br><br><br><br><br><br><br><br><br>
-		<div>Project2</div>
-	</div>
-	<a href="Work.html" class="btn1" id="btn3">More</a>
-</div>
-	
-
-	
-
-
-<footer>
-	<div class="foot">
-		<span>Made by Lilia Zaliievskaya</span>
-	</div>
-</footer>
-
-<img onclick="scrollToTop()" class="ontop" src="images/ontop.png" alt=">">
+	<script src="script/slider.js"></script>
 
 </body>
 </html>
